@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+ <style></style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+<img src="images/1.jpg" class="col-sm-12" alt="" id="main" >
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+             <div class="col-md-3" ><img src="images/1.jpg" alt="" width="250px" onclick="fun1(this.src)" id="img1" ></div>
+            <div class="col-md-3" ><img src="images/2.jpg" alt=""  width="250px" onclick="fun2(this.src)" id="img2"></div>
+            <div class="col-md-3"><img src="images/3.jpg" alt=""  width="250px" onclick="fun3(this.src)" id="img3"></div>
+            <div class="col-md-3"><img src="images/4.cms" alt="" width="250px" onclick="fun4(this.src)" id="img4"></div>
+        </div>
+    </div>
+    <script>
+        
+        function fun1(abc){
+         
+            // let a= document.getElementById("main").src=document.getElementById("img1").src;   
+           let a=  document.getElementById("img1").src ;
+            let b =  document.getElementById("main").src;
+            a=b;
+            b=a;
+                      
+
+            
+        }
+        function fun2(abc,){
+         
+            // let a= document.getElementById("main").src=document.getElementById("img2").src;   
+            document.getElementById("main").src=
+            document.getElementById("img2").src;
+            function    fun(){
+             document.getElementById("img2").src=
+              document.getElementById("main").src;
+             }
+             fun();  
+
+            
+        }
+        function fun3(abc){
+         
+         let a =  document.getElementById("img3").src;
+          let b = document.getElementById("main").src;
+   b=a;
+            
+                     
+
+            
+        }
+        function fun4(abc){
+         
+document.getElementById("img4").src=document.getElementById("main").src   
+
+            
+                     
+
+            
+        }
+    </script>
+</body>
+</html>
